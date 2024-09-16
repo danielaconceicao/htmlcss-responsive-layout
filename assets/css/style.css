@@ -1,0 +1,204 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --booleano-title: "Nerko One", cursive;
+    --booleano-font: Montserrat, 'Helvetica Neue', sans-serif;
+    ;
+
+    --booleano-mustard: #ff9614;
+    --boleano-title: #4E3969;
+    --booleano-bg-info: #f6f5f9;
+    --booleano-bg-main: #f6f5f3;
+    --booleano-white: #fff;
+    --booleano-black: #000;
+    --booleano-viola: #7c69a4;
+
+}
+
+.text-center {
+    text-align: center;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.pb-3{
+    padding-bottom: .8rem;
+}
+
+.style-none{
+    list-style: none;
+}
+.b-shadow{
+    box-shadow: -1px 2px 17px 1px #9b9a9b;
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+}
+
+#app-header {
+    h1 {
+        color: var(--booleano-mustard);
+        font-size: 2rem;
+        padding: 1rem 0;
+        font-family: var(--booleano-title);
+    }
+}
+
+#app-main {
+    padding: 0 1rem;
+    background-color: var(--booleano-bg-main);
+
+    #video-space {
+        p {
+            padding-top: 1.5rem;
+            color: gray;
+        }
+
+        .content {
+            padding: 1rem 0;
+
+            h2 {
+                color: var(--boleano-title);
+                font-weight: 700;
+            }
+
+            i {
+                color: var(--booleano-mustard);
+            }
+
+            span {
+                font-size: 1.1rem;
+            }
+
+            .bg-color {
+                background-color: var(--booleano-mustard);
+                border: 1px solid transparent;
+                border-radius: 20px;
+                color: var(--booleano-white);
+                padding: .5rem 1rem;
+                font-weight: 800;
+                margin-left: .4rem;
+            }
+        }
+    }
+
+    #information{
+        background-color: var(--booleano-white);
+        padding: 2rem;
+        margin-bottom: 2rem;
+        .information-info{
+            background-color: var(--booleano-bg-info);
+            padding: 1.5rem;
+            margin-bottom: 1.6rem;
+            .bg-viola{
+                background-color: var(--booleano-viola);
+                border-radius: 5px;
+                padding: .3rem;
+                color: var(--booleano-white);
+            }
+
+            .span-info{
+                padding-left: 6rem;
+            }
+
+            span{
+                color: var(--booleano-mustard);
+                font-weight: 600;
+            }
+
+            .divisor{
+                border: 1px solid rgba(189, 188, 188, 0.833);
+                margin: 1rem 0;
+                
+            }
+
+            p{
+                font-weight: 500;
+            }
+        }
+
+        span{
+            i{
+                color: var(--booleano-mustard);
+            }
+        }
+    }
+
+    #social-networks{
+        .social{
+            padding: 1rem 0;
+            ul{
+                padding-left: 1rem;
+                li{
+                  border: 1px solid transparent;
+                  background-color: var(--booleano-white);
+                  margin-right: 1rem;
+                  padding: 1rem;
+                  border-radius: 50px;
+                  span{
+                    display: none;
+                  }
+                  .fa-facebook, .fa-twitter{
+                    color: #1a77f3;
+                  }
+                  .fa-instagram{
+                    color: #e168a1;
+                  }
+                  .fa-pinterest, .fa-youtube{
+                    color: red;
+                  }
+                }
+            }
+        }
+    }
+
+    #presentation{
+        h2{
+            padding-top: 2rem;
+            font-weight: 500;
+        }
+        img{
+            width: 80%;
+            display: block;
+            margin: 0 auto;
+            
+        }
+        .divisor{
+            border: 1.4px solid var(--booleano-mustard);
+            margin: 1rem 0;
+            width: 60px;
+        }
+        p{
+            padding: 1rem 0 2rem 0;
+            line-height: 1.8rem;
+        }
+    }
+}
+
+#app-footer{
+    .content-footer{
+        background-color: var(--booleano-viola);
+        color: var(--booleano-white);
+        padding: 2rem 0;
+        text-align: center;
+        address{
+            padding: 1rem;
+        }
+        a{
+            color: var(--booleano-white);
+            padding-right: .8rem;
+        }
+    }
+}
