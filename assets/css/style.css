@@ -235,6 +235,33 @@ body {
     }
 }
 
+@media screen and (min-width: 576px) {
+    #app-main {
+        #social-networks {
+            .social {
+                ul {
+                    li {
+                        width: 100px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        #presentation {
+            .presentation-image {
+                img {
+                    float: left;
+                    width: 50%;
+                    margin: 0 1rem 1rem 0
+                }
+            }
+        }
+    }
+
+}
+
+
 @media screen and (min-width: 768px) {
     .d-flex-md {
         display: flex;
@@ -312,14 +339,6 @@ body {
             }
         }
 
-        #presentation {
-            img {
-                float: left;
-                width: 50%;
-                margin: 0 1rem 1rem 0
-            }
-
-        }
     }
 }
 
