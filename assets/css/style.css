@@ -32,6 +32,10 @@
     justify-content: space-between;
 }
 
+.flex-column {
+    flex-direction: column;
+}
+
 .pb-3 {
     padding-bottom: .8rem;
 }
@@ -179,6 +183,12 @@ body {
         }
     }
 
+    #cooking-classes {
+        img {
+            display: none;
+        }
+    }
+
     #presentation {
         h2 {
             padding-top: 2rem;
@@ -224,6 +234,10 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+    .d-flex-md {
+        display: flex;
+    }
+
     #app-header {
         h1 {
             text-align: left;
@@ -251,6 +265,10 @@ body {
                         font-weight: 700;
                     }
                 }
+
+                .star {
+                    padding-top: .5rem;
+                }
             }
         }
 
@@ -270,10 +288,10 @@ body {
             }
         }
 
-        #social-networks{
-            .social{
-                ul{
-                    li{
+        #social-networks {
+            .social {
+                ul {
+                    li {
                         width: 60%;
                         padding: .4rem;
                         text-align: center;
@@ -281,5 +299,85 @@ body {
                 }
             }
         }
+
+        #cooking-classes {
+            img {
+                display: block;
+                width: 100%;
+                padding: 2rem 0;
+            }
+        }
+
+        #presentation {
+            img {
+                float: left;
+                width: 50%;
+                margin: 0 1rem 1rem 0
+            }
+
+        }
     }
+}
+
+@media screen and (min-width: 992px) {
+    .col-8 {
+        width: calc((100% / 12) * 8);
+    }
+
+    .col-4 {
+        width: calc((100% / 12) * 4);
+    }
+
+    .d-flex-lg {
+        display: flex;
+    }
+
+    .flex-column-lg {
+        flex-direction: column;
+    }
+
+    .justify-between-lg {
+        justify-content: space-between;
+    }
+
+    #app-main {
+        #video-space {
+            display: flex;
+        }
+
+        #social-networks {
+            .social {
+                ul {
+                    li {
+                        vertical-align: middle;
+
+                        span {
+                            display: block;
+                            font-size: .8rem;
+
+                            i {
+                                padding-right: .4rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #app-footer {
+        .content-footer {
+            align-items: center;
+
+            .logo {
+                text-align: start;
+
+                span {
+                    padding-left: 1.1rem;
+                }
+            }
+        }
+
+    }
+
 }
