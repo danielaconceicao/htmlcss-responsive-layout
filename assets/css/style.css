@@ -66,6 +66,7 @@ body {
     background-color: var(--booleano-bg-main);
 
     #video-space {
+
         p {
             padding-top: 1.5rem;
             color: gray;
@@ -101,51 +102,52 @@ body {
                 margin-left: .4rem;
             }
         }
-    }
 
-    #information {
-        background-color: var(--booleano-white);
-        padding: 2rem;
-        margin-bottom: 2rem;
+        .information {
+            background-color: var(--booleano-white);
+            padding: 2rem;
+            margin-bottom: 2rem;
 
-        .info {
-            background-color: var(--booleano-bg-info);
-            padding: 1.5rem;
-            margin-bottom: 1.6rem;
+            .info {
+                background-color: var(--booleano-bg-info);
+                padding: 1.5rem;
+                margin-bottom: 1.6rem;
 
-            .bg-viola {
-                background-color: var(--booleano-viola);
-                border-radius: 5px;
-                padding: .3rem;
-                color: var(--booleano-white);
-            }
+                .bg-viola {
+                    background-color: var(--booleano-viola);
+                    border-radius: 5px;
+                    padding: .3rem;
+                    color: var(--booleano-white);
+                }
 
-            .span-info {
-                padding-left: 6rem;
+                .span-info {
+                    padding-left: 6rem;
+                }
+
+                span {
+                    color: var(--booleano-mustard);
+                    font-weight: 600;
+                }
+
+                .divisor {
+                    border: 1px solid rgba(189, 188, 188, 0.833);
+                    margin: 1rem 0;
+
+                }
+
+                p {
+                    font-weight: 500;
+                }
             }
 
             span {
-                color: var(--booleano-mustard);
-                font-weight: 600;
-            }
-
-            .divisor {
-                border: 1px solid rgba(189, 188, 188, 0.833);
-                margin: 1rem 0;
-
-            }
-
-            p {
-                font-weight: 500;
-            }
-        }
-
-        span {
-            i {
-                color: var(--booleano-mustard);
+                i {
+                    color: var(--booleano-mustard);
+                }
             }
         }
     }
+
 
     #social-networks {
         .social {
@@ -270,23 +272,25 @@ body {
                     padding-top: .5rem;
                 }
             }
-        }
 
-        #information {
-            .info {
-                position: relative;
+            .information {
+                .info {
+                    position: relative;
 
-                .span-info {
-                    position: absolute;
-                    right: 25px;
+                    .span-info {
+                        position: absolute;
+                        right: 25px;
+                    }
+                }
+
+                .info-content {
+                    gap: 2rem;
+                    flex-wrap: wrap;
                 }
             }
 
-            .info-content {
-                gap: 2rem;
-                flex-wrap: wrap;
-            }
         }
+
 
         #social-networks {
             .social {
@@ -340,24 +344,45 @@ body {
         justify-content: space-between;
     }
 
+    .justify-center-lg {
+        justify-content: center;
+    }
+
     #app-main {
         #video-space {
-            display: flex;
+            .information {
+                padding: 1rem;
+
+                .info {
+                    margin-bottom: .7rem;
+
+                    p {
+                        padding-top: .8rem;
+                    }
+                }
+
+                .info-content {
+                    gap: 0;
+                }
+            }
         }
 
         #social-networks {
             .social {
+
                 ul {
+
                     li {
-                        vertical-align: middle;
+
+                        i {
+                            padding-right: .4rem;
+                            display: block;
+                            text-align: center;
+                        }
 
                         span {
                             display: block;
                             font-size: .8rem;
-
-                            i {
-                                padding-right: .4rem;
-                            }
                         }
                     }
                 }
